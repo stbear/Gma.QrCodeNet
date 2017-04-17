@@ -1,0 +1,1 @@
+.\nuget\NuGet.exe restore Gma.QrCodeNet.sln

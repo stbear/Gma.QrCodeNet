@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>QrCode.Net Web demo</title>
+	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.min.css" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<div class="page-header">
+			<h1>Plain HTML <a href="/index.htm" class="pull-right"><i class="icon-home"></i></a></h1>
+			<p>Use of simple HTML form without any JavaScript or other dependency. Opens the resulting QR code image in a new window.</p>
+		</div>
+		<form method="GET" target="_blank" action="/QrCodeHandler.ashx" class="form-horizontal">
+			<div class="control-group">
+				<label class="control-label" for="t">QR code content</label>
+				<div class="controls">
+					<input type="text" name="t" placeholder="QR code content" class="input-block-level">
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label" for="e">Error correction level</label>
+				<div class="controls">
+					<select name="e">
+						<option value="L">Low</option>
+						<option value="M" selected="selected">Medium</option>
+						<option value="Q">Quartile</option>
+						<option value="H">High</option>
+					</select>
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label" for="q">Quiet zone</label>
+				<div class="controls">
+					<select name="q">
+						<option value="Zero">Zero</option>
+						<option value="Two" selected="selected">Two</option>
+						<option value="Four">Four</option>
+					</select>
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label" for="s">Module size</label>
+				<div class="controls">
+					<select name="s">
+						<option value="4">4</option>
+						<option value="8">8</option>
+						<option value="12" selected="selected">12</option>
+					</select>
+				</div>
+			</div>
+			<div class="control-group">
+				<div class="controls">
+					<button type="submit" class="btn">Generate</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

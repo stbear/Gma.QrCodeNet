@@ -1,0 +1,11 @@
+C:\Users\bakhuta\Documents\Visual Studio 2013\Projects\Gma.QrCodeNet\nuget\lib\net40\Gma.QrCodeNet.Encoding.XML
+C:\Users\bakhuta\Documents\Visual Studio 2013\Projects\Gma.QrCodeNet\nuget\lib\net40\Gma.QrCodeNet.Encoding.dll
+C:\Users\bakhuta\Documents\Visual Studio 2013\Projects\Gma.QrCodeNet\nuget\lib\net40\Gma.QrCodeNet.Encoding.pdb
+C:\Users\bakhuta\Documents\Visual Studio 2013\Projects\Gma.QrCodeNet\Gma.QrCodeNet.Encoder\obj\Release\Gma.QrCodeNet.Encoding.csprojResolveAssemblyReference.cache
+C:\Users\bakhuta\Documents\Visual Studio 2013\Projects\Gma.QrCodeNet\Gma.QrCodeNet.Encoder\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Users\bakhuta\Documents\Visual Studio 2013\Projects\Gma.QrCodeNet\Gma.QrCodeNet.Encoder\obj\Release\Gma.QrCodeNet.Encoding_MarkupCompile.cache
+C:\Users\bakhuta\Documents\Visual Studio 2013\Projects\Gma.QrCodeNet\Gma.QrCodeNet.Encoder\obj\Release\Gma.QrCodeNet.Encoding_MarkupCompile.lref
+C:\Users\bakhuta\Documents\Visual Studio 2013\Projects\Gma.QrCodeNet\Gma.QrCodeNet.Encoder\obj\Release\themes\Generic.baml
+C:\Users\bakhuta\Documents\Visual Studio 2013\Projects\Gma.QrCodeNet\Gma.QrCodeNet.Encoder\obj\Release\Gma.QrCodeNet.Encoding.g.resources
+C:\Users\bakhuta\Documents\Visual Studio 2013\Projects\Gma.QrCodeNet\Gma.QrCodeNet.Encoder\obj\Release\Gma.QrCodeNet.Encoding.dll
+C:\Users\bakhuta\Documents\Visual Studio 2013\Projects\Gma.QrCodeNet\Gma.QrCodeNet.Encoder\obj\Release\Gma.QrCodeNet.Encoding.pdb

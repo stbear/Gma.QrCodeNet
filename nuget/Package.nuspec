@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>QrCode.Net</id>
+    <version>0.4.0.0</version>
+    <authors>gmamaladze, silverlancer, iMarti</authors>
+    <owners>gmamaladze, silverlancer</owners>
+    <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
+    <projectUrl>http://qrcodenet.codeplex.com/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>.Net QrCode Encoder</description>
+    <releaseNotes>Rewrite render and controller, Add different framework packages, library strong signed</releaseNotes>
+    <copyright>QrCode.Net Authors</copyright>
+    <tags>QrCode Encoder</tags>
+	<dependencies>
+    </dependencies>
+  </metadata>
+</package>

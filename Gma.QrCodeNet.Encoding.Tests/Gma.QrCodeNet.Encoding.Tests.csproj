@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3C686D15-BFF5-474A-8381-B742790D8148}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gma.QrCodeNet.Encoding.Tests</RootNamespace>
+    <AssemblyName>Gma.QrCodeNet.Encoding.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework, Version=2.6.0.11089, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDependentAssemblyPaths Condition=" '$(VS100COMNTOOLS)' != '' " Include="$(VS100COMNTOOLS)..\IDE\PrivateAssemblies">
+      <Visible>False</Visible>
+    </CodeAnalysisDependentAssemblyPaths>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BitListTest.cs" />
+    <Compile Include="DataEncodation\EightBitByteEncoderTest.cs" />
+    <Compile Include="DataEncodation\KanjiEncoderTest.cs" />
+    <Compile Include="DataEncodation\TestCases\EightBitByteEncoderTestCaseFactory.cs" />
+    <Compile Include="DataEncodation\TestCases\KanjiEncoderTestCaseFactory.cs" />
+    <Compile Include="EncodingRegion\BCHTest.cs" />
+    <Compile Include="EncodingRegion\BitCountTest.cs" />
+    <Compile Include="EncodingRegion\CodewordsTest.cs" />
+    <Compile Include="EncodingRegion\FormatInfoTest.cs" />
+    <Compile Include="EncodingRegion\TestCases\BCHTestCaseBase.cs" />
+    <Compile Include="EncodingRegion\TestCases\BCHTestCaseFactory.cs" />
+    <Compile Include="EncodingRegion\TestCases\BitCountTestCaseFactory.cs" />
+    <Compile Include="EncodingRegion\TestCases\CodewordsTestCaseFactory.cs" />
+    <Compile Include="EncodingRegion\TestCases\FormatInfoTestCaseFactory.cs" />
+    <Compile Include="EncodingRegion\TestCases\VersionInfoTestCaseFactory.cs" />
+    <Compile Include="EncodingRegion\VersionInfoTest.cs" />
+    <Compile Include="ErrorCorrection\CodewordsBitListTest.cs" />
+    <Compile Include="ErrorCorrection\ECTest.cs" />
+    <Compile Include="ErrorCorrection\TestCases\CodewordsBitListTestCaseFactory.cs" />
+    <Compile Include="ErrorCorrection\TestCases\ECTestCaseFactory.cs" />
+    <Compile Include="ErrorCorrection\TestCases\VersionDetailExtension.cs" />
+    <Compile Include="Masking\TestCases\MaskPatternTestCaseFactory.cs" />
+    <Compile Include="ModeAutoSelectTest.cs" />
+    <Compile Include="PenaltyScore\Penalty1Test.cs" />
+    <Compile Include="PenaltyScore\Penalty2Test.cs" />
+    <Compile Include="PenaltyScore\Penalty3Test.cs" />
+    <Compile Include="PenaltyScore\Penalty4Test.cs" />
+    <Compile Include="PenaltyScore\PenaltyTestBase.cs" />
+    <Compile Include="PenaltyScore\TestCases\Penalty1TestCaseFactory.cs" />
+    <Compile Include="PenaltyScore\TestCases\Penalty2TestCaseFactory.cs" />
+    <Compile Include="PenaltyScore\TestCases\Penalty3TestCaseFactory.cs" />
+    <Compile Include="PenaltyScore\TestCases\Penalty4TestCaseFactory.cs" />
+    <Compile Include="PenaltyScore\TestCases\PenaltyScoreTestCaseFactory.cs" />
+    <Compile Include="PerformanceTest\EncodePTest.cs" />
+    <Compile Include="PerformanceTest\ErrorCorrectionPTest.cs" />
+    <Compile Include="PerformanceTest\InputRecognisePTest.cs" />
+    <Compile Include="PerformanceTest\PenaltyPTest.cs" />
+    <Compile Include="PerformanceTest\QrCodePTest.cs" />
+    <Compile Include="PerformanceTest\ReedSolomonPTest.cs" />
+    <Compile Include="PerformanceTest\TerminatorPTest.cs" />
+    <Compile Include="PerformanceTest\VersionControlPTest.cs" />
+    <Compile Include="Positioning\PositioningPatternsTest.cs" />
+    <Compile Include="Positioning\TestCases\PositioningPatternsTestCaseFactory.cs" />
+    <Compile Include="ReedSolomon\ByteConvertTest.cs" />
+    <Compile Include="ReedSolomon\GaloisField256Test.cs" />
+    <Compile Include="ReedSolomon\PolyDivideTest.cs" />
+    <Compile Include="ReedSolomon\PolyXorMultyTest.cs" />
+    <Compile Include="ReedSolomon\RSTest.cs" />
+    <Compile Include="ReedSolomon\TestCase\ByteConvertTestCaseFactory.cs" />
+    <Compile Include="ReedSolomon\TestCase\GaloisField256TestCaseFactory.cs" />
+    <Compile Include="ReedSolomon\TestCase\PolyDivideTestCaseFactory.cs" />
+    <Compile Include="ReedSolomon\TestCase\PolyXorMultyTestCaseFactory.cs" />
+    <Compile Include="ReedSolomon\TestCase\RSEncoderTestCaseFactory.cs" />
+    <Compile Include="Terminate\TerminatorTest.cs" />
+    <Compile Include="Terminate\TestCases\TerminatorTestCaseFactory.cs" />
+    <Compile Include="Versions\TestCases\TestMethod\VersionCheckStatus.cs" />
+    <Compile Include="Versions\TestCases\TestMethod\VersionTableTest.cs" />
+    <Compile Include="Versions\TestCases\TestMethod\VersionTableTestProperties.cs" />
+    <Compile Include="Versions\TestCases\TestMethod\VersionTest.cs" />
+    <Compile Include="Versions\TestCases\TestMethod\VersionTestProperties.cs" />
+    <Compile Include="Versions\TestCases\VersionControlTestCaseFactory.cs" />
+    <Compile Include="Versions\TestCases\VersionTableTestCaseFactory.cs" />
+    <Compile Include="Versions\VersionControlTest.cs" />
+    <Compile Include="Versions\VersionTableTests.cs" />
+    <Compile Include="_compatibility\ErrorCorrectionLevelConverter.cs" />
+    <Compile Include="_Helper\BitMatrixToGraphicExtensions.cs" />
+    <Compile Include="_Helper\BitVectorTestExtensions.cs" />
+    <Compile Include="_Helper\BitMatrixTestExtensions.cs" />
+    <Compile Include="DataEncodation\TestCases\AlphanumericEncoderTestCaseFactory.cs" />
+    <Compile Include="DataEncodation\AlphaumericEncoderTest.cs" />
+    <Compile Include="DataEncodation\EncoderTestBase.cs" />
+    <Compile Include="DataEncodation\TestCases\EncoderTestCaseFactoryBase.cs" />
+    <Compile Include="DataEncodation\NumericEncoderTest.cs" />
+    <Compile Include="DataEncodation\TestCases\NumericEncoderTestCaseFactory.cs" />
+    <Compile Include="EndToEnd\TestCases\EndToEndSmokeTestCaseFactory.cs" />
+    <Compile Include="EndToEnd\EndToEndSmokeTests.cs" />
+    <Compile Include="Masking\MaskPatternTest.cs" />
+    <Compile Include="_Helper\ByteMatrixToGraphicExtensions.cs" />
+    <Compile Include="_Helper\DataEncodeExtensions.cs" />
+    <Compile Include="_Helper\PolynomialExtensions.cs" />
+    <Compile Include="_Helper\TriStateMatrixToGraphicExtensions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="_Helper\TriStateMatrixTestExtensions.cs" />
+    <Compile Include="_Helper\MatrixConverter.cs" />
+    <Compile Include="_legacy\Common\CharacterSetECI.cs" />
+    <Compile Include="_legacy\Common\reedsolomon\GF256.cs" />
+    <Compile Include="_legacy\Common\reedsolomon\GF256Poly.cs" />
+    <Compile Include="_legacy\Common\reedsolomon\ReedSolomonEncoder.cs" />
+    <Compile Include="_legacy\Common\reedsolomon\ReedSolomonException.cs" />
+    <Compile Include="_legacy\Core\ECI.cs" />
+    <Compile Include="_legacy\Core\EncodeHintType.cs" />
+    <Compile Include="_legacy\Core\ErrorCorrectionLevelInternal.cs" />
+    <Compile Include="_legacy\Core\FormatInformation.cs" />
+    <Compile Include="_legacy\Core\Mode.cs" />
+    <Compile Include="_legacy\Core\QRCodeInternal.cs" />
+    <Compile Include="_legacy\Core\ReaderException.cs" />
+    <Compile Include="_legacy\Core\SupportClass.cs" />
+    <Compile Include="_legacy\Core\Version.cs" />
+    <Compile Include="_legacy\Core\WriterException.cs" />
+    <Compile Include="_legacy\encoding\BitVector.cs" />
+    <Compile Include="_legacy\encoding\BlockPair.cs" />
+    <Compile Include="_legacy\encoding\EncoderInternal.cs" />
+    <Compile Include="_legacy\encoding\MaskUtil.cs" />
+    <Compile Include="_legacy\encoding\MatrixUtil.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gma.QrCodeNet.Encoder\Gma.QrCodeNet.Encoding.csproj">
+      <Project>{AA3FD0C4-5577-4327-8486-AA4F5903DB9B}</Project>
+      <Name>Gma.QrCodeNet.Encoding</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataEncodation\TestCases\AlphanumericDataEncodeTestDataSet.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="DataEncodation\TestCases\AlphanumericEncoderTestDataSet.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="DataEncodation\TestCases\EightBitByteDataEncodeTestDataSet.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="DataEncodation\TestCases\EightBitByteEncoderTestDataSet.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="DataEncodation\TestCases\KanjiDataEncodeTestDataSet.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="DataEncodation\TestCases\KanjiEncoderTestDataSet.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="DataEncodation\TestCases\NumericDataEncodeTestDataSet.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="DataEncodation\TestCases\NumericEncoderTestDataSet.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="EncodingRegion\TestCases\BCHTestCases.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="EncodingRegion\TestCases\BitCountTestCases.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="EncodingRegion\TestCases\CodewordsTestCase.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="EncodingRegion\TestCases\FormatInfoTestCase.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="EncodingRegion\TestCases\VersionInfoTestCase.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="EndToEnd\TestCases\DataSet1.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ErrorCorrection\TestCases\ECTestCase.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="PenaltyScore\TestCases\Penalty1TestDataSet.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="PenaltyScore\TestCases\Penalty2TestDataSet.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="PenaltyScore\TestCases\Penalty3TestDataSet.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="PenaltyScore\TestCases\Penalty4TestDataSet.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ReedSolomon\TestCase\ByteConvertTestCase.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ReedSolomon\TestCase\GaloisField256TestCase.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ReedSolomon\TestCase\PolyDivideTestCase.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ReedSolomon\TestCase\PolyXorMultyTestCase.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ReedSolomon\TestCase\RSEncoderTestCase.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Terminate\TestCases\TerminatorTestCase.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Versions\TestCases\VersionControlTest.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Versions\TestCases\VersionTableTest.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Masking\TestCases\MaskPatternTestDataSet.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Positioning\TestCases\PositioningPatternsTestDataSet.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

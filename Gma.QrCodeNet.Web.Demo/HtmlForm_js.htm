@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>QrCode.Net Web demo</title>
+	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.min.css" rel="stylesheet">
+	<script type="text/javascript">
+		function generate() {
+			var t = document.getElementById('t').value;
+			var e = document.getElementById('e').value;
+			var q = document.getElementById('q').value;
+			var s = document.getElementById('s').value;
+			var image = document.getElementById('result');
+			image.src = '/QrCodeHandler.ashx?e=' + e + '&q=' + q + '&s=' + s + '&t=' + encodeURI(t);
+			image.alt = image.title = t;
+			return false;
+		}
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="page-header">
+			<h1>Native JavaScript <a href="/index.htm" class="pull-right"><i class="icon-home"></i></a></h1>
+			<p>A single JavaScript function building the URL to get the QR code image. Doesn't use jQuery or any other library.</p>
+		</div>
+		<div class="row">
+			<div class="span8">
+				<form class="form-horizontal">
+					<div class="control-group">
+						<label class="control-label" for="t">QR code content</label>
+						<div class="controls">
+							<input type="text" id="t" placeholder="QR code content" class="input-block-level">
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="e">Error correction level</label>
+						<div class="controls">
+							<select id="e">
+								<option value="L">Low</option>
+								<option value="M" selected="selected">Medium</option>
+								<option value="Q">Quartile</option>
+								<option value="H">High</option>
+							</select>
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="q">Quiet zone</label>
+						<div class="controls">
+							<select id="q">
+								<option value="Zero">Zero</option>
+								<option value="Two" selected="selected">Two</option>
+								<option value="Four">Four</option>
+							</select>
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="s">Module size</label>
+						<div class="controls">
+							<select id="s">
+								<option value="4">4</option>
+								<option value="8">8</option>
+								<option value="12" selected="selected">12</option>
+							</select>
+						</div>
+					</div>
+					<div class="control-group">
+						<div class="controls">
+							<a onclick="return generate()" class="btn">Generate</a>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="span4">
+				<img id="result"/>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

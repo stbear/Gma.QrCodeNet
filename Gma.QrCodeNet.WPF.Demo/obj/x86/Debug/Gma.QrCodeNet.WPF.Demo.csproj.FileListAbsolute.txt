@@ -1,0 +1,16 @@
+C:\Users\bakhuta\Documents\Visual Studio 2013\Projects\Gma.QrCodeNet\Gma.QrCodeNet.WPF.Demo\bin\Debug\Gma.QrCodeNet.WPF.Demo.exe.config
+C:\Users\bakhuta\Documents\Visual Studio 2013\Projects\Gma.QrCodeNet\Gma.QrCodeNet.WPF.Demo\bin\Debug\Gma.QrCodeNet.WPF.Demo.exe
+C:\Users\bakhuta\Documents\Visual Studio 2013\Projects\Gma.QrCodeNet\Gma.QrCodeNet.WPF.Demo\bin\Debug\Gma.QrCodeNet.WPF.Demo.pdb
+C:\Users\bakhuta\Documents\Visual Studio 2013\Projects\Gma.QrCodeNet\Gma.QrCodeNet.WPF.Demo\bin\Debug\Gma.QrCodeNet.Encoding.dll
+C:\Users\bakhuta\Documents\Visual Studio 2013\Projects\Gma.QrCodeNet\Gma.QrCodeNet.WPF.Demo\bin\Debug\Gma.QrCodeNet.Encoding.pdb
+C:\Users\bakhuta\Documents\Visual Studio 2013\Projects\Gma.QrCodeNet\Gma.QrCodeNet.WPF.Demo\bin\Debug\Gma.QrCodeNet.Encoding.xml
+C:\Users\bakhuta\Documents\Visual Studio 2013\Projects\Gma.QrCodeNet\Gma.QrCodeNet.WPF.Demo\obj\x86\Debug\Gma.QrCodeNet.WPF.Demo.csprojResolveAssemblyReference.cache
+C:\Users\bakhuta\Documents\Visual Studio 2013\Projects\Gma.QrCodeNet\Gma.QrCodeNet.WPF.Demo\obj\x86\Debug\MainWindow.baml
+C:\Users\bakhuta\Documents\Visual Studio 2013\Projects\Gma.QrCodeNet\Gma.QrCodeNet.WPF.Demo\obj\x86\Debug\MainWindow.g.cs
+C:\Users\bakhuta\Documents\Visual Studio 2013\Projects\Gma.QrCodeNet\Gma.QrCodeNet.WPF.Demo\obj\x86\Debug\App.g.cs
+C:\Users\bakhuta\Documents\Visual Studio 2013\Projects\Gma.QrCodeNet\Gma.QrCodeNet.WPF.Demo\obj\x86\Debug\Gma.QrCodeNet.WPF.Demo_MarkupCompile.cache
+C:\Users\bakhuta\Documents\Visual Studio 2013\Projects\Gma.QrCodeNet\Gma.QrCodeNet.WPF.Demo\obj\x86\Debug\Gma.QrCodeNet.WPF.Demo.g.resources
+C:\Users\bakhuta\Documents\Visual Studio 2013\Projects\Gma.QrCodeNet\Gma.QrCodeNet.WPF.Demo\obj\x86\Debug\Gma.QrCodeNet.WPF.Demo.Properties.Resources.resources
+C:\Users\bakhuta\Documents\Visual Studio 2013\Projects\Gma.QrCodeNet\Gma.QrCodeNet.WPF.Demo\obj\x86\Debug\Gma.QrCodeNet.WPF.Demo.csproj.GenerateResource.Cache
+C:\Users\bakhuta\Documents\Visual Studio 2013\Projects\Gma.QrCodeNet\Gma.QrCodeNet.WPF.Demo\obj\x86\Debug\Gma.QrCodeNet.WPF.Demo.exe
+C:\Users\bakhuta\Documents\Visual Studio 2013\Projects\Gma.QrCodeNet\Gma.QrCodeNet.WPF.Demo\obj\x86\Debug\Gma.QrCodeNet.WPF.Demo.pdb
