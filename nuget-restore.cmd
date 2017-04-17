@@ -1,1 +1,1 @@
-.\nuget\NuGet.exe restore Gma.QrCodeNet.sln
+.\.nuget\NuGet.exe restore Gma.QrCodeNet.sln
